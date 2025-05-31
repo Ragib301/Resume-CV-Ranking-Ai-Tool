@@ -140,7 +140,11 @@ streamlit run main.py
 ## 📁 File Structure
 
 ```
-├── app.py                  # Main Streamlit app
+├── main.py                 # Main Streamlit Cod
+├── utils.py                # Main funtions of pdf reading and analyzing are stored here
+├── secretKey.py            # Code that stores the Gemini API Key (For security purpose)
+├── bg.png                  # Backgroud image for the app
+├── ranking_result.csv      # Results in CSV file
 ├── requirements.txt        # Python dependencies
 └── README.md               # This documentation
 ```
@@ -156,8 +160,7 @@ streamlit run main.py
 ---
 
 ## 📄 License
-
-MIT License. Use freely with attribution.
+* MIT License. Use freely with attribution.
 ---
 
 > Built as a side-project with love, curiosity, and coffee ☕. Contributions welcome!
