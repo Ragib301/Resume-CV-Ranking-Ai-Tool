@@ -1,0 +1,7 @@
+Name,TotalScore,SoftSkillScore,HardSkillScore,ExperienceScore,PreferenceScore,Summary
+MOHTASHIM MONOWAR,80,25,25,20,10,"Good experience, strong soft skills, some hard skills, and from Bangladesh.  High scores in experience and preference. Soft and hard skill are moderate."
+MICHELLE SANDERS,75,20,35,20,0,"Strong experience (7 years), solid skills in ML/Python. Certifications in Data Science and Machine Learning. Lacks location preference."
+ALEXANDER TAYLOR,60,20,25,15,0,Good experience (3+) with Python and web development. Shows teamwork and communication skills. Lacks DevOps/ML. Not from Bangladesh.
+JAMES JOHNSON,55,20,15,20,0,"Good experience as Financial Analyst, some soft skills and one required hard skill (Python) found, but lacks location preference."
+MD. SAMSUZZAMAN SALAHUDDIN,50,20,5,15,10,"Good soft skills, limited hard skills, decent experience for age, and meets location preference. Experience score is adjusted considering his age (born in 2007)."
+C MCHLOE MARTINEZ,35,15,0,20,0,"Good experience in finance, lacks required technical skills, not from Bangladesh."
