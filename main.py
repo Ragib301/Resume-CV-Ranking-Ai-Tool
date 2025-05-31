@@ -23,17 +23,13 @@ hardskills = st.multiselect("Select Required Hard Skills", hardskills_list)
 preference = st.text_input("Custom Preference (Optional): ")
 experience = st.slider("Experience in years: ", 0, 15, 1)
 
-if st.button("Analyze & Rank Resumes"):
+if st.button("Analyze & Rank CVs"):
     results = []
     with st.spinner("Analyzing CVs with Gemini AI..."):
         for file in uploaded_files:
             cv_text = read_pdf(file)
             result_dict = analyze_cv(cv_text, softskills, hardskills, preference, experience)
-      response = client.models.generate_content(
-            model=model, contents=prompt)
-        match = re.search(r'\{[\s\S]*\}', response.text)
-        data = json.loads(match.group())
-        return data       results.append(result_dict)
+            results.append(result_dict)
     
     # SORT AND DISPLAY
     sorted_results = sorted(results, key=lambda x: x.get('TotalScore', 0), reverse=True)
