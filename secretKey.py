@@ -1,1 +1,1 @@
-gemini_api = "AIzaSyBG6iMPOF-hzQhYVeHbmMmgoupD0vT1b2I"
+gemini_api = "PLACE_YOUR_GEMINI_API_KEY_HERE"
