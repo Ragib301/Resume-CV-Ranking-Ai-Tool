@@ -80,16 +80,16 @@ A professional-grade CV/Resume Ranking system built using **Python**, **Streamli
 5. **Display Results:**
 
    ```python
-    # SORT AND DISPLAY
+    # Sort and Convert into DataFrame
     sorted_results = sorted(results, key=lambda x: x.get('TotalScore', 0), reverse=True)
     st.subheader("Ranked Candidates")
     ranking_df = pd.DataFrame(sorted_results)
     
-    # Assign ranks
+    # Assign Rankings
     ranking_df.index = ranking_df.index + 1
     ranking_df.index.name = "Rank"
 
-    # Display the styled dataframe
+    # Display the DataFrame
     st.dataframe(ranking_df, use_container_width=True)
    ```
 
@@ -98,7 +98,7 @@ A professional-grade CV/Resume Ranking system built using **Python**, **Streamli
 6. **Download CSV:**
 
    ```python
-   # EXPORT CSV
+   # Export in CSV format
     csv_df = ranking_df[['Name', 'TotalScore', 'SoftSkillScore',
                  'HardSkillScore', 'ExperienceScore', 'PreferenceScore', 'Summary']]
     csv = csv_df.to_csv(index=False).encode('utf-8')
@@ -117,7 +117,7 @@ A professional-grade CV/Resume Ranking system built using **Python**, **Streamli
 * PyPDF2
 * Pandas
 * Json
-* Gemini API (via `google.generativeai`)
+* Gemini API (via `google`)
 
 ---
 
